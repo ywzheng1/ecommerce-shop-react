@@ -1,0 +1,41 @@
+.collection-item {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  align-items: center;
+
+  @media screen and (min-width: 1100px){
+    width: 22%;
+    height: 350px;
+  }
+
+  .image {
+    width: 100%;
+    height: 95%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 5px;
+  }
+
+  .collection-footer {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+
+    @media screen and (min-width: 1200px){
+      height: 5%;
+    }
+
+    .name {
+      width: 90%;
+      margin-bottom: 15px;
+    }
+
+    .price {
+      width: 10%;
+    }
+  }
+}
