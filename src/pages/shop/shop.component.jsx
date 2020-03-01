@@ -29,11 +29,26 @@ class ShopPage extends React.Component {
 
         const collectionRef = firestore.collection('collections');
 
-        this.unsubscribeFromSnapshop = collectionRef.onSnapshot(async snapshot => {
+        // ** async way **
+        // this.unsubscribeFromSnapshop = collectionRef.onSnapshot(async snapshot => {
+        //     const collectionsMap = convertCollectionsSnapshotToMap(snapshot)
+        //     updateCollections(collectionsMap)
+        //     this.setState({ loading:false })
+        // })
+
+        // ** Promise way **
+        collectionRef.get().then(snapshot => {
             const collectionsMap = convertCollectionsSnapshotToMap(snapshot)
             updateCollections(collectionsMap)
-            this.setState({ loading:false })
-        })
+            this.setState({ loading:false });
+        });
+
+        // ** native fetch way **
+        // const fetchUrl = 'https://firestore.googleapis.com/v1/projects/react-ecommerce-shop-db/databases/(default)/documents/collections'
+        
+        // fetch(fetchUrl)
+        //     .then(response => response.json())
+        //     .then(collections => console.log(collections));
     }
 
     render() {
