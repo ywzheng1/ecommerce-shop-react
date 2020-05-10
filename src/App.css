@@ -1,5 +1,17 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
-  padding: 2rem 5rem;
+  padding: 0;
+  margin: 0 0 5rem 0;
+  /* bottom = footer height */
+  /* padding: 25px; */
+}
+
+#root {
+  
 }
 
 a {

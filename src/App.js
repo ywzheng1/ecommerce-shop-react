@@ -14,6 +14,7 @@ import { setCurrentUser } from './redux/user/user.actions';
 import { selectCurrentUser } from './redux/user/user.selectors';
 
 import './App.css';
+import Footer from './components/footer/footer';
 
 class App extends React.Component {
   unsubscribeFromAuth = null;
@@ -51,6 +52,7 @@ class App extends React.Component {
           <Route exact path='/checkout' component={CheckoutPage}/> 
           <Route exact path='/signin' render={() => this.props.currentUser ? (<Redirect to='/'/>) : (<SignInAndSignUpPage />)}/>
         </Switch>
+        <Footer />
       </div>
     );
   }

@@ -22,7 +22,7 @@ const Header = ({ currentUser, hidden }) => (
     <LogoContainer to='/'>
       <Logo className='logo' />
     </LogoContainer>
-    <OptionsContainer>
+    <OptionsContainer className='nav-options'>
       <OptionLink to='/shop'>SHOP</OptionLink>
       <OptionLink to='/shop'>CONTACT</OptionLink>
       {currentUser ? (

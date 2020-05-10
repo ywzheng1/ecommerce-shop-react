@@ -1,4 +1,5 @@
 .collection-page {
+  margin: 2rem 4rem;
   display: flex;
   flex-direction: column;
 
@@ -11,6 +12,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
+
+    @media screen and (max-width: 700px) {
+      grid-template-columns: 1fr 1fr;
+    }
 
     & .collection-item {
       margin-bottom: 30px;
