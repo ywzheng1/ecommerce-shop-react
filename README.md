@@ -1,29 +1,26 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React E-commerce Shop
 
-## Ecommerce Shop Store Project
+## :mag: View Live Project
+To view the live version, check out this link: https://react-ecommerce-shop-live.herokuapp.com/
 
-To download project, use the button `Clone or download` button on upper right hand corner.
-In the project directory, you can run:
+## :rocket: Install
+You can see the fork button in the top right corner of every GitHub project; click it and a copy of the project will be added to your GitHub profile under the same name as the original project.  
+After forking the project, simply clone it the way you would from the new forked project in your own GitHub repository and you can commit and push to it freely!
+#### After you fork and clone:
+1. Install dependencies  
+   In your terminal after you clone this project down, you can either run `yarn` or `npm install` to buid all the dependencies in the project.
+2. Replace the `config` variable with your own firebase snippet or you can use the local data.json to import data.
+3. Set the `publishableKey` variable in the `stripe-button.component.jsx` with your own publishable key from the stripe dashboard. This allows you to simulate the payment checkout process.
+   
+<br />
 
-### `yarn start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## What this project uses:
+- :fire: React with React hooks
+- :fire: Redux, Redux-saga
+- :globe_with_meridians: React Router
+-  :key: Session storage + Persistence, allows user to save uncheckout item in their shopping cart, remember user's login status even after brower closed. 
+- :rotating_light: Jest and React Testing Library for unit tests
+- :books: Firebase for nosql dabase and auth
+- :books: React-doc-gen for auto documentation generation
+- :package: Third party libraries (react-fontawsome, react0transition-group)
+- :rose: Styles (Sass) and styled-component.
