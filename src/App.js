@@ -7,6 +7,7 @@ import { auth, createUserProfileDocument} from './firebase/firebase.utils';
 import { setCurrentUser } from './redux/user/user.actions';
 import { selectCurrentUser } from './redux/user/user.selectors';
 import Footer from './components/footer/footer';
+import Spinner from './components/spinner/spinner.styles';
 import './App.css';
 
 const HomePage = lazy(() => import('./pages/homepage/homepage.component'))
@@ -46,7 +47,7 @@ class App extends React.Component {
       <div>
         <Header />
         <Switch>
-          <Suspense fallback={<div>...loading</div>}>
+          <Suspense fallback={<Spinner/>}>
             <Route exact path='/' component={HomePage} />
             <Route path='/shop' component={ShopPage} />
             <Route exact path='/checkout' component={CheckoutPage}/> 
