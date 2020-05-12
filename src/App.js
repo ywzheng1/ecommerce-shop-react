@@ -7,7 +7,7 @@ import { auth, createUserProfileDocument} from './firebase/firebase.utils';
 import { setCurrentUser } from './redux/user/user.actions';
 import { selectCurrentUser } from './redux/user/user.selectors';
 import Footer from './components/footer/footer';
-import Spinner from './components/spinner/spinner.styles';
+import Spinner from './components/spinner/spinner';
 import './App.css';
 
 const HomePage = lazy(() => import('./pages/homepage/homepage.component'))
