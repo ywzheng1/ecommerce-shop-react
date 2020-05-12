@@ -20,9 +20,9 @@ After forking the project, simply clone it the way you would from the new forked
 - :fire: React with React hooks
 - :fire: Redux, Redux-saga
 - :globe_with_meridians: React Router
--  :key: Session storage + Persistence, allows user to save uncheckout item in their shopping cart, remember user's login status even after brower closed. 
+- :key: Session storage + Persistence, allows user to save uncheckout item in their shopping cart, remember user's login status even after brower closed. 
+- :moneybag: Stripe for payment process experience
 - :rotating_light: Jest and React Testing Library for unit tests
 - :books: Firebase for nosql dabase and auth
 - :books: React-doc-gen for auto documentation generation
-- :package: Third party libraries (react-fontawsome, react0transition-group)
 - :rose: Styles (Sass) and styled-component.
