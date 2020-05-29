@@ -5,7 +5,7 @@
 ## :mag: View Live Project
 To view the live version, check out this link: https://react-ecommerce-shop-live.herokuapp.com/
 
-## :rocket: Install
+## :rocket: Installation
 You can see the fork button in the top right corner of every GitHub project; click it and a copy of the project will be added to your GitHub profile under the same name as the original project.  
 After forking the project, simply clone it the way you would from the new forked project in your own GitHub repository and you can commit and push to it freely!
 #### After you fork and clone:
