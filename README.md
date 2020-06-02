@@ -2,7 +2,7 @@
 ![homepage screenshot](src/assets/homepage-screenshot.png)
 
 
-## :mag: View Live Project
+## :mag: Checkout Live Project
 To view the live version, check out this link: https://react-ecommerce-shop-live.herokuapp.com/
 
 ## :rocket: Installation
