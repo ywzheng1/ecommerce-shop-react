@@ -14,7 +14,7 @@ After forking the project, simply clone it the way you would from the new forked
 2. Replace the `config` variable with your own firebase snippet or you can use the local data.json to import data.
 3. Set the `publishableKey` variable in the `stripe-button.component.jsx` with your own publishable key from the stripe dashboard. This allows you to simulate the payment checkout process.
    
-<br />
+<br /><br />
 
 ## What this project uses:
 - :fire: React with React hooks
